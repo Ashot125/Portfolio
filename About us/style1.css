@@ -1,0 +1,205 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: aqua;
+  }
+
+  .text-center {
+    flex-grow: 1; /* Занимает доступное пространство, чтобы разместить текст по центру */
+    text-align: center; /* Центрирование текста по горизонтали */
+  }
+
+  .container {
+    display: flex;
+    font-family: cursive;
+    align-items: center; 
+    justify-content: center; 
+    background: #054ADA;
+    color: rgb(250, 250, 252);
+    padding: 50px;
+    font-size: 20px;
+    
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+    
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    text-align: center; /* Центрируем содержимое */
+    background: #474e5d;
+  }
+  .image-section {
+    position: relative;
+    display: inline-block;
+}
+
+img {
+    display: block;
+    width: 1300px; /* Максимальная ширина изображения не превышает ширину родительского контейнера */
+    height: 700px;
+}
+
+
+h1 {
+    margin-top: 0; /* Убираем верхний отступ у заголовка */
+}
+
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+ #team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+
+ }
+ .team-heading h3{
+    color: white;
+    font-size: 3rem;
+    text-transform: lowercase;
+ }
+ .team-box{
+    width: 100%;
+    padding: 20xp;
+    user-select: none;
+ }
+.t-b-img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.t-b-img::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,) 100%) ;
+}
+.t-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    filter: grayscale(0);
+}
+.t-b-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.t-b-text strong{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.t-b-text span{
+    color: #474e5d;
+    font-size: 0.9rem;
+
+}
+
+.team-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.team-social a{
+    margin: 0px 5px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: all ease 0.3s;
+
+}
+.team-social a:hover{
+    color: #054ADA;
+}
+
+.swiper{
+    max-width: 745px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+
+.swiper-slide{
+    width: 300px !important;
+    opacity: 0.2;
+    margin: 50px 0px;
+    margin-top: 0px;
+}
+.swiper-slide-active{
+    opacity: 1;
+    border: 5px solid rgb(111, 111, 226);
+}
+@media(max-width:724px){
+    .team-heading h3{
+        font-size: 2.6rem;
+    }
+}
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  .footer p {
+    color: white;
+    font-size: 14px;
+  }
